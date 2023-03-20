@@ -1,2 +1,2 @@
-# week-2-code-challenge
+# week-1-code-challenge
 This is week two code challenge
