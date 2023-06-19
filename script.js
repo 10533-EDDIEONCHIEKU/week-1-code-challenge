@@ -34,37 +34,32 @@ if (speed < speedLimit) {
     console.log("Points:", demeritPoints);
   }
 }
-
-// challenge three
-
-// Input values
+//CHALLANGE 3
 
 let basicSalary = parseFloat(prompt("Enter the basic salary:"));
 let benefits = parseFloat(prompt("Enter the benefits:"));
 
-// Constants for tax rates and deductions
+
 const taxRate = 0.2;
 const nhifRate = 0.02;
 const nssfRate = 0.1;
 const nhifMax = 5000;
 const nssfMax = 2000;
 
-// Calculate gross salary
 let grossSalary = basicSalary + benefits;
 
-// Calculate payee (tax)
+
 let payee = grossSalary * taxRate;
 
-// Calculate NHIF deductions
+
 let nhifDeductions = Math.min(grossSalary * nhifRate, nhifMax);
 
-// Calculate NSSF deductions
+
 let nssfDeductions = Math.min(grossSalary * nssfRate, nssfMax);
 
-// Calculate net salary
 let netSalary = grossSalary - payee - nhifDeductions - nssfDeductions;
 
-// Print the results
+
 console.log("Gross Salary:", grossSalary);
 console.log("Payee (Tax):", payee);
 console.log("NHIF Deductions:", nhifDeductions);
